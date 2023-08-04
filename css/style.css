@@ -15,17 +15,12 @@
   --main-title-color: #2e2f42;
   --hover-link-color: #404bbf;
 }
+
 /*
 ▮▮▯▯⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘▯▯▮▮
 ▮▮   start settings
 ▮▮▯▯⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘▯▯▮▮
 */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 h1,
 h2,
 h3,
@@ -54,8 +49,6 @@ img {
 ▮▮▯▯⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘▯▯▮▮
 */
 body {
-  margin: 0;
-  padding: 0;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   font-size: var(--main-font-size);
@@ -73,10 +66,14 @@ main {
   flex-grow: 1;
 }
 
-.conteiner {
-  max-width: 1168px;
+section {
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1158px;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -112,7 +109,6 @@ main {
 .main-title {
   font-size: var(--title-h1-font-size);
 }
-
 .section-title {
   font-size: var(--title-h2-font-size);
   line-height: 1.11;
@@ -120,7 +116,6 @@ main {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-
 .in-section-title {
   font-size: var(--title-h3-font-size);
   font-weight: 500;
@@ -163,7 +158,6 @@ main {
   background: #f4f4fd;
   cursor: pointer;
 }
-
 .portfolio-nav-button:hover,
 .portfolio-nav-button:focus {
   background: #404bbf;
@@ -172,9 +166,6 @@ main {
   color: #fff;
 }
 
-section {
-  padding: 120px 0;
-}
 
 /*
 ▮▮▯▯⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘▯▯▮▮
@@ -185,7 +176,7 @@ section {
   background-color: var(--supportive-bg-color);
   padding: 188px 0;
 }
-.hero-conteiner {
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -200,6 +191,7 @@ section {
 }
 .hero-btn {
   display: block;
+  min-width: 169px;
   line-height: 1.5;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
@@ -217,7 +209,6 @@ section {
 }
 
 .hero-btn:hover,
-.hero-btn:focus,
 .hero-btn:active {
   background-color: #404bbf;
 }
@@ -230,7 +221,7 @@ section {
 .advantages {
   padding-bottom: 0;
 }
-.advantages-conteiner {
+.advantages-container {
 }
 .advantages-title {
 }
@@ -333,7 +324,7 @@ section {
   display: block;
   width: calc((100% - 48px) / 3);
 
-  border: 1px solid  #e7e9fc;
+  border: 1px solid #e7e9fc;
   background: var(--white, #fff);
 }
 .portfolio-list-link {
@@ -361,8 +352,9 @@ section {
 */
 .header {
   height: 72px;
+  border-bottom: 1px solid #e7e9fc;
 }
-.header-conteiner {
+.header-container {
   height: 100%;
   display: flex;
   align-items: center;
@@ -370,6 +362,7 @@ section {
 }
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 .header-logo {
   margin-right: 76px;
