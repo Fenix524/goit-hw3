@@ -126,7 +126,7 @@ section {
 }
 
 .logo {
-  display: block;
+  display: inline-block;
   font-family: var(--supportive-font-page);
   font-weight: 800;
   font-size: 18px;
@@ -161,7 +161,7 @@ section {
 .portfolio-nav-button:hover,
 .portfolio-nav-button:focus {
   background: #404bbf;
-  border: 1px solid inherit;
+  border: 1px solid transparent;
 
   color: #fff;
 }
@@ -219,7 +219,6 @@ section {
 ▮▮▯▯⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘▯▯▮▮
 */
 .advantages {
-  padding-bottom: 0;
 }
 .advantages-container {
 }
@@ -242,6 +241,7 @@ section {
 ▮▮▯▯⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘⁘▯▯▮▮
 */
 .services {
+  padding-top: 0;
 }
 .services-title {
   margin-bottom: 72px;
@@ -277,7 +277,7 @@ section {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 3 * 24px) / 4);
 }
 .team-list-item > * {
   background-color: #ffffff;  
@@ -287,7 +287,7 @@ section {
 }
 .team-list-text-container{
   padding: 32px 0;
-  text-align: center;
+  text-align: center; 
 }
 .team-list-title {  
 }
@@ -413,7 +413,7 @@ section {
   padding: 100px 0;
 }
 .footer-logo {
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 .footer-description {
   color: #f4f4fd;
